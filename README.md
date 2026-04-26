@@ -1,16 +1,18 @@
 # 🏢 AI Company Ecosystem
 
-> Complete AI company infrastructure - One command setup for your cybersecurity, development, and AI automation needs.
+> Complete AI company infrastructure - One command setup for cybersecurity, development, and AI automation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Stars](https://img.shields.io/github/stars/animeprints/ai-company)](https://github.com/animeprints/ai-company/stargazers)
 [![Forks](https://img.shields.io/github/forks/animeprints/ai-company)](https://github.com/animeprints/ai-company/network)
 
-## 🚀 Quick Start
+---
+
+## 🚀 Quick Start (One Command)
 
 ```bash
-# One command setup
-curl -sSL https://raw.githubusercontent.com/animeprints/ai-company/main/install.sh | bash
+# Install EVERYTHING - ~150 skills + tools
+curl -sSL https://raw.githubusercontent.com/animeprints/ai-company/main/install-all-skills.sh | bash
 ```
 
 Or clone manually:
@@ -22,63 +24,40 @@ cd ~/ai-company
 
 ---
 
-## 📦 What's Included
+## 📦 What's Included (9 Files)
 
-### 1. Strategic Report (`ai-ecosystem-strategic-report.md`)
-Comprehensive analysis of:
-- **90,987+ skills** from skills.sh
-- **12,000+ MCP servers** in the ecosystem
-- **AI Agent Frameworks** comparison (LangChain, CrewAI, AutoGen)
-- **Cybersecurity tools** (PentAGI, Metasploit, Nuclei)
-- Strategic recommendations for IT companies
+| File | Purpose |
+|------|---------|
+| `install-all-skills.sh` | ⭐ One-tap install ~150 skills |
+| `skills-manifest.md` | Complete list of all skills |
+| `README.md` | This file |
+| `skills-reference.md` | Skills by category |
+| `ai-ecosystem-strategic-report.md` | Strategy + 90K skills ecosystem |
+| `cybersecurity-playbook.md` | Red/Blue team operations |
+| `ai-development-guide.md` | LangChain, CrewAI, MCP guides |
+| `install.sh` | Basic installer |
+| `skills-backup/install-ai-company.sh` | Quick setup |
 
-### 2. Cybersecurity Module 🔐
-| Tool | Purpose | Stars |
-|------|---------|-------|
-| **PentAGI** | Autonomous AI pentesting | 16.5K |
-| Metasploit | Exploitation framework | 95K+ |
-| Nuclei | Vulnerability scanning | 55K+ |
-| Burp Suite | Web application testing | N/A |
+---
 
-**Tools included:**
-- Recon: nmap, amass, subfinder
-- Exploitation: sqlmap, hydra, hashcat
-- AD Attacks: BloodHound, Impacket
-- Cloud Security: Pacu (AWS), Azure tools
-- LLM Security: garak, PyRIT
+## 🎯 Skills Overview (~150 Skills)
 
-### 3. AI Agent Frameworks 🤖
-| Framework | Best For | Stars |
-|-----------|----------|-------|
-| **LangGraph** | Complex production workflows | 98K+ |
-| **CrewAI** | Rapid multi-agent prototyping | 52K+ |
-| **AutoGen** | Microsoft enterprise | 40K+ |
-| **OpenAI SDK** | GPT-native agents | 15K+ |
-| **Claude Agent SDK** | MCP-native development | 10K+ |
+### By Category
 
-### 4. MCP Servers (12,000+)
-Connect AI to external tools:
-- **Filesystem** (485K) - File operations
-- **GitHub** (398K) - Repo management
-- **PostgreSQL** (312K) - Database
-- **Brave Search** (287K) - Web search
-- **Playwright** (180K) - Browser automation
-- **Slack** (150K) - Messaging
-- **Firecrawl** (85K) - Web scraping
+| Category | Count | Top Skills |
+|----------|-------|-----------|
+| 🎨 Frontend & Design | 12 | frontend-design, shadcn, vercel-react-best-practices |
+| 🤖 AI & Agents | 18 | microsoft-foundry, supabase, firebase, claude-api |
+| 🌥️ Cloud & DevOps | 15 | azure-kubernetes, azure-cost, azure-deploy |
+| 🔒 Security | 8 | openclaw-secure-linux-cloud, systematic-debugging |
+| 📊 Marketing | 20 | copywriting, seo-audit, paid-ads, cold-email |
+| 📄 Productivity | 15 | pdf, xlsx, pptx, docx, firecrawl |
+| 🔧 Tools | 20 | find-skills, mcp-builder, deploy-to-vercel |
+| 🧠 Workflow | 15 | brainstorming, writing-plans, test-driven-development |
+| 📚 Next.js/React | 8 | next-best-practices, react-view-transitions |
+| 🎯 Specialty | 15 | soultrace, remotion-best-practices, grill-me |
 
-### 5. Skills (Top 100+)
-| Rank | Skill | Installs | Use Case |
-|------|-------|----------|---------|
-| 1 | find-skills | 1.2M | Discovery |
-| 2 | vercel-react-best-practices | 349K | React dev |
-| 3 | frontend-design | 338K | UI/UX |
-| 4 | soultrace | 312K | Personality AI |
-| 5 | microsoft-foundry | 252K | Azure AI |
-| 6 | azure-kubernetes | 150K | K8s on Azure |
-| 7 | shadcn | 109K | UI components |
-| 8 | seo-audit | 88K | SEO analysis |
-| 9 | pdf | 84K | PDF handling |
-| 10 | copywriting | 79K | Marketing copy |
+**Total: ~150 skills**
 
 ---
 
@@ -86,69 +65,146 @@ Connect AI to external tools:
 
 ### Prerequisites
 ```bash
-# Required
 - Python 3.8+
 - Node.js 18+
 - Docker (for PentAGI)
 ```
 
-### Install Everything
+### Full Install
 ```bash
-# Clone
-git clone https://github.com/animeprints/ai-company.git ~/ai-company
-
-# Or just download files
-cd ~ && mkdir ai-company && cd ai-company
-curl -sOL https://raw.githubusercontent.com/animeprints/ai-company/main/ai-ecosystem-strategic-report.md
+# One command to rule them all
+curl -sSL https://raw.githubusercontent.com/animeprints/ai-company/main/install-all-skills.sh | bash
 ```
 
-### Setup PentAGI (Cybersecurity)
+### Manual Install
 ```bash
-# Requires Docker + OpenAI/Anthropic API key
+# Clone repo
+git clone https://github.com/animeprints/ai-company.git ~/ai-company
+
+# Install specific category
+cd ~/ai-company
+bash install.sh
+```
+
+---
+
+## 🔐 Cybersecurity Module
+
+### Tools Included
+| Tool | Purpose |
+|------|---------|
+| **PentAGI** | Autonomous AI pentesting (16.5K stars) |
+| Metasploit | Exploitation framework |
+| Nuclei | Vulnerability scanning |
+| Burp Suite | Web testing |
+
+### Quick Start PentAGI
+```bash
 docker pull vxcontrol/pentagi
 docker run -d -p 8080:8080 \
   -e OPENAI_API_KEY=sk-... \
-  -e PENTAGI_POSTGRES_PASSWORD=securepass \
   vxcontrol/pentagi
 # Access at http://localhost:8080
 ```
+
+### Manual Tools
+```bash
+# Recon
+nmap -sV target.com
+amass enum -passive -d target.com
+
+# Vulnerability
+nuclei -u target.com -severity critical,high
+
+# Exploitation
+msfconsole
+```
+
+---
+
+## 🤖 AI Agent Frameworks
+
+| Framework | Install | Best For |
+|----------|---------|---------|
+| **LangGraph** | `pip install langgraph` | Complex workflows |
+| **CrewAI** | `pip install crewai` | Multi-agent teams |
+| **AutoGen** | `pip install pyautogen` | Microsoft ecosystem |
+| **OpenAI SDK** | `pip install openai-agents` | GPT-native |
+
+---
+
+## 🔌 MCP Servers (12,000+)
+
+### Official (Anthropic)
+```bash
+npx @anthropic-ai/mcp-server-filesystem /path
+npx @anthropic-ai/mcp-server-github
+npx @anthropic-ai/mcp-server-postgres
+npx @anthropic-ai/mcp-server-brave-search
+```
+
+### Python
+```bash
+pip install mcp-server-fetch
+pip install mcp-server-sqlite
+```
+
+### Top Community
+- Notion, Slack, Firecrawl, Linear, Sentry, Docker
 
 ---
 
 ## 📚 Documentation
 
-### Cybersecurity
-- [PentAGI Docs](https://docs.pentagi.com)
-- [Metasploit Guide](https://docs.metasploit.com)
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-
-### AI Agents
-- [LangChain Docs](https://python.langchain.com)
-- [CrewAI Docs](https://docs.crewai.com)
-- [MCP Specification](https://modelcontextprotocol.io)
-
-### Skills
-- [skills.sh](https://skills.sh) - Discover skills
-- [mcpindex.net](https://mcpindex.net) - MCP directory
+| File | Description |
+|------|------------|
+| [skills-manifest.md](./skills-manifest.md) | Complete skill inventory with install commands |
+| [skills-reference.md](./skills-reference.md) | Skills organized by category |
+| [ai-development-guide.md](./ai-development-guide.md) | AI dev tutorials |
+| [cybersecurity-playbook.md](./cybersecurity-playbook.md) | Red/Blue team guides |
+| [ai-ecosystem-strategic-report.md](./ai-ecosystem-strategic-report.md) | Industry analysis |
 
 ---
 
 ## 🎯 Use Cases
 
 ### For Startups
-```
-1. Cybersecurity → PentAGI for automated penetration testing
-2. Development → LangChain + MCP for AI-powered coding
-3. Marketing → CrewAI + copywriting skills
-4. Operations → automation (browser-use, firecrawl)
+```bash
+# Cybersecurity → PentAGI
+# Development → LangChain + MCP
+# Marketing → CrewAI + copywriting
+# Operations → automation
 ```
 
 ### For Enterprises
+```bash
+# Azure → microsoft-foundry + azure-kubernetes
+# AWS → AWS MCP + Pacu
+# Google → Google ADK + Vertex
+# Multi-cloud → LangGraph with any LLM
 ```
-1. Azure → microsoft-foundry + azure-kubernetes
-2. AWS → AWS MCP + Pacu
-3. Google → Google ADK + Vertex AI
-4. Multi-cloud → LangGraph with any LLM
+
+---
+
+## 📖 Usage After Install
+
+```bash
+# List installed skills
+skill list
+
+# Find more skills
+skill find "pdf"
+
+# Run a skill
+skill run owner/repo
+
+# Quick commands
+ai-company        # Go to workspace
+ai-report        # View strategic report  
+ai-skills       # View skills manifest
+ai-sec          # View security playbook
+ai-dev         # View AI dev guide
+pentagi         # Start PentAGI (requires Docker)
 ```
 
 ---
@@ -156,7 +212,7 @@ docker run -d -p 8080:8080 \
 ## 🤝 Contributing
 
 1. Fork the repo
-2. Add your skills/tools
+2. Add skills to manifest
 3. Update README
 4. Submit PR
 
@@ -168,13 +224,18 @@ MIT License - Build freely!
 
 ---
 
-## 🔗 Links
+## 🔗 Resources
 
 - **Repo**: https://github.com/animeprints/ai-company
 - **Skills**: https://skills.sh
 - **MCP Registry**: https://mcpindex.net
 - **PentAGI**: https://pentagi.com
+- **LangChain**: https://python.langchain.com
+- **CrewAI**: https://docs.crewai.com
 
 ---
 
 *Built with 🔥 by AI Company Ecosystem*
+
+![Stars](https://img.shields.io/github/stars/animeprints/ai-company)
+![Forks](https://img.shields.io/github/forks/animeprints/ai-company)
